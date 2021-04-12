@@ -1,5 +1,5 @@
 from flask_restful import Resource
-from src import api
+
 
 
 class Home(Resource):
@@ -12,7 +12,5 @@ class Smoke(Resource):
         return {"message": "Ok"}, 200
 
 
-api.add_resource(Home, '/')
-api.add_resource(Smoke, '/smoke')
 
 
